@@ -1,0 +1,7 @@
+.slick-dots-bottom {
+    margin: 0!important;
+    padding: 0!important;
+}
+.slick-prev:before {
+    color: #0e0d0d!important;
+}

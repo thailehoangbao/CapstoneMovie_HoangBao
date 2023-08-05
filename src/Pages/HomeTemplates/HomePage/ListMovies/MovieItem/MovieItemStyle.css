@@ -1,0 +1,13 @@
+.slick-prev:before {
+    z-index: 10;
+    color: black!important;
+    background-color: white!important;
+}
+.slick-next:before {
+    color: black!important;
+    background-color: white!important;
+}
+
+.width-item {
+    width: 100%!important;
+}

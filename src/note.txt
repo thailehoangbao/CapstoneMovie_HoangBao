@@ -1,0 +1,6 @@
+      "taiKhoan": "khanh",
+      "hoTen": "khanh",
+      "email": "undefined@gmail.com",
+      "soDT": "0123456789",
+      "matKhau": "012345648",
+      "maLoaiNguoiDung": "QuanTri"
