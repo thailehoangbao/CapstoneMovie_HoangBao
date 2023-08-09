@@ -47,15 +47,15 @@ const Routes = [
             },
             {
                 path: 'films',
-                element: lazy(() => import('../Pages/AdminTemplates/FilmsAdmin/FilmsAdmin')),
+                element: lazy(() => import('./../Pages/AdminTemplates/FilmsAdmin/FilmsAdmin')),
                 nested: [
                     {
                         path: 'add-film',
-                        element: lazy(() => import('../Pages/AdminTemplates/FilmsAdmin/AddFilm/AddFilm'))
+                        element: lazy(() => import('./../Pages/AdminTemplates/FilmsAdmin/AddFilm/AddFilm'))
                     },
                     {
                         path: 'edit-film/:id',
-                        element: lazy(() => import('../Pages/AdminTemplates/FilmsAdmin/EditFilm/EditFilm'))
+                        element: lazy(() => import('./../Pages/AdminTemplates/FilmsAdmin/EditFilm/EditFilm'))
                     },
                     {
                         path: 'show-time/:id',
@@ -65,15 +65,15 @@ const Routes = [
             },
             {
                 path: 'user',
-                element: lazy(() => import('../Pages/AdminTemplates/User/UserAdmin')),
+                element: lazy(() => import('./../Pages/AdminTemplates/User/UserAdmin')),
                 nested: [
                     {
                         path: 'add-user',
-                        element: lazy(() => import('../Pages/AdminTemplates/User/AddUser/AddUser'))
+                        element: lazy(() => import('./../Pages/AdminTemplates/User/AddUser/AddUser'))
                     },
                     {
                         path: 'edit-user',
-                        element: lazy(() => import('../Pages/AdminTemplates/User/EditUser/EditUser'))
+                        element: lazy(() => import('./../Pages/AdminTemplates/User/EditUser/EditUser'))
                     },
                 ]
             },
