@@ -10,7 +10,8 @@ export const actFetchAddFilm= (form) => {
             .then((result) => {
                 if (result.data.statusCode === 200) {
                     dispatch(actAddFilmSuccess(result.data.content));
-                    console.log("Thêm phim success!")
+                    console.log("Thêm phim success!");
+                    alert('Thêm phim thành công!');
                 }
             })
             .catch(error => {

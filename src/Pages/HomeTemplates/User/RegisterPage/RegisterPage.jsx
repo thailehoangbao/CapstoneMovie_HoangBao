@@ -2,10 +2,12 @@ import React from 'react';
 import { useFormik } from 'formik';
 import { useDispatch } from 'react-redux';
 import { actFetchRegister } from './duckRegister/actRegister';
+import { useNavigate } from 'react-router-dom';
 
 export default function RegisterPage() {
 
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const formik = useFormik({
         initialValues: {
             taiKhoan: "",
@@ -17,7 +19,7 @@ export default function RegisterPage() {
         },
         onSubmit: values => {
             console.log(values);
-            dispatch(actFetchRegister(values));
+            dispatch(actFetchRegister(values,navigate));
         },
     });
 

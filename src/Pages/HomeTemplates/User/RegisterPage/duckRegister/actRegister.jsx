@@ -22,7 +22,7 @@ const actRegisterRequest = () => {
 }
 
 
-export const actFetchRegister = (user) => {
+export const actFetchRegister = (user,navigate) => {
     return (dispatch) => {
         dispatch(actRegisterRequest());
 
@@ -31,9 +31,14 @@ export const actFetchRegister = (user) => {
             .then((result) => {
                 if (result.data.statusCode === 200) {
                     dispatch(actRegisterSuccess(result.data.content));
+                    if (navigate) {
+                        alert('Bạn đã đăng ký thành công tài khoản!');
+                        navigate('/', { replace: true });
+                    }
                 }
             })
             .catch((error) => {
+                alert("Failed to register");
                 dispatch(actRegisterFail(error));
             })
     }

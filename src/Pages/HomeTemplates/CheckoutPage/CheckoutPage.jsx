@@ -228,7 +228,7 @@ export default function (props) {
             <TabPane tab='01 THÔNG TIN RẠP CHIẾU' key={1} label={`Tabs 1`}>
                 <CheckoutPage />
             </TabPane>
-            <TabPane tab='02 LỊCH SỬ ĐẶT VÉ' key={2} label={`Tabs 2`} >
+            <TabPane tab='02 LỊCH SỬ ĐẶT VÉ' key={2} label={`Tabs 2`} style={{height:"100vh"}}>
                 <LichSuDatVe />
             </TabPane>
         </Tabs>

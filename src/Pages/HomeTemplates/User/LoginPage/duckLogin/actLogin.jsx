@@ -30,7 +30,7 @@ export const actFetchLogin = (user, navigate) => {
             .then((result) => {
                 if (result.data.statusCode === 200) {
                     dispatch(actLoginSuccess(result.data.content));
-                    console.log("Đăng Nhập Thành Công!", result.data.content);
+                    // console.log("Đăng Nhập Thành Công!", result.data.content);
                     if (navigate) {
                         alert('Bạn đã đăng nhập thành công!');
                         navigate('/'); // Gọi callback function để chuyển trang
@@ -39,7 +39,7 @@ export const actFetchLogin = (user, navigate) => {
             })
             .catch((error) => {
                 dispatch(actLoginFail(error));
-                console.log("Thất bại", error);
+                alert('Đăng Nhập Thất Bại!!!');
             })
     }
 }
