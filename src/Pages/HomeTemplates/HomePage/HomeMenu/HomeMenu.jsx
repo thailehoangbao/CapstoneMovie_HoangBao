@@ -72,7 +72,7 @@ export default function HomeMenu() {
 
     return (
         <div className='container mt-5 w-full'>
-            {<div className='p-5' style={{width:"100%",marginLeft:"100px"}}>
+            {<div className='p-5' style={{width:"100%"}}>
                 <Tabs tabPosition={tabPosition}>
                     {renderHeThongRap()}
                 </Tabs>
